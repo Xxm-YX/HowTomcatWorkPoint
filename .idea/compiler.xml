@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="how-tomcat-works-ex01" />
+        <module name="how-tomcat-works-ex02" />
+        <module name="how-tomcat-works-ex03" />
+        <module name="how-tomcat-works-util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="how-tomcat-works-ex01" target="1.8" />
+      <module name="how-tomcat-works-ex02" target="1.8" />
+      <module name="how-tomcat-works-ex03" target="1.8" />
+      <module name="how-tomcat-works-util" target="1.8" />
+      <module name="HowTomcatWorksDemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

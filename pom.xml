@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>icu.sgwxm</groupId>
+  <artifactId>HowTomcatWorksDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <name>HowTomcatWorks</name>
+  <description>How Tomcat Works Demo</description>
+  
+   <developers>
+		<developer>
+			<id>HowTomcatWorksDemo</id>
+			<name>Xxm</name>
+			<email>787038570@qq.com</email>
+			<url>http://www.sgwxm.icu</url>
+		</developer>
+  </developers>
+  
+  
+  <dependencies>
+  	<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>servlet-api</artifactId>
+		    <version>2.3</version><!-- 这里使用低版本的servlet -->
+		    <scope>provided</scope>
+	</dependency>
+  </dependencies>
+
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <!-- 表示编译java源码时，包含src/main/java和src/main/resources目录下的xml、properties一起 -->
+            <!--如果mapper.xml在src/main/java目录下，就必须做这个配置，不然编译后会丢弃mapper.xml文件-->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+
+
+    <modules>
+    <module>how-tomcat-works-ex01</module>
+      <module>how-tomcat-works-ex02</module>
+      <module>how-tomcat-works-ex03</module>
+        <module>how-tomcat-works-util</module>
+        <!--    <module>how-tomcat-works-ex03</module>-->
+<!--    <module>how-tomcat-works-util</module>-->
+<!--    <module>how-tomcat-works-ex04</module>-->
+<!--    <module>how-tomcat-works-ex05</module>-->
+<!--    <module>how-tomcat-works-ex06</module>-->
+<!--    <module>how-tomcat-works-ex07</module>-->
+<!--    <module>how-tomcat-works-ex08</module>-->
+<!--    <module>how-tomcat-works-ex09</module>-->
+<!--    <module>how-tomcat-works-ex10</module>-->
+<!--    <module>how-tomcat-works-ex11</module>-->
+<!--    <module>how-tomcat-works-ex13</module>-->
+<!--    <module>how-tomcat-works-ex14</module>-->
+<!--    <module>how-tomcat-works-ex15</module>-->
+<!--    <module>how-tomcat-works-ex16</module>-->
+<!--    <module>how-tomcat-works-ex20</module>-->
+    </modules>
+
+</project>
