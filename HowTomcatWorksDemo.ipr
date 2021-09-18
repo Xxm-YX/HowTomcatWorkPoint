@@ -102,6 +102,7 @@ under the License.
       <module filepath="$PROJECT_DIR$/how-tomcat-works-ex01/how-tomcat-works-ex01.iml"/>
       <module filepath="$PROJECT_DIR$/how-tomcat-works-ex02/how-tomcat-works-ex02.iml"/>
       <module filepath="$PROJECT_DIR$/how-tomcat-works-ex03/how-tomcat-works-ex03.iml"/>
+      <module filepath="$PROJECT_DIR$/how-tomcat-works-util/how-tomcat-works-util.iml"/>
     </modules> 
   </component>  
   <UsedPathMacros> 
